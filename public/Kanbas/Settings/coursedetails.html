@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link href="index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<body>    
+    <div class="container-fluid">
+      <div class="row">
+
+            <div class="fixed-sidebar">
+              <div class="icon-link"> 
+                  <a href="../Account/index.html" class="sidebar-link" id="account-link">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                      Account
+                  </a>
+              </div>
+            
+
+            <div class="icon-link">
+                <a href="../Dashboard/index.html" class="sidebar-link" id="dashboard-link">
+                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+            </div>
+            
+        
+            <div class="icon-link selected-link">
+                <a href="../Courses/index.html" class="sidebar-link" id="courses-link">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="calendar-link">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="inbox-link">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    Inbox
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="history-link">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    History
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="studio-link">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Studio
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="commons-link">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="help-link">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help
+                </a>
+            </div>
+        </div>
+
+
+        <div class="wd-grid-col-third-page">
+            <a href="../index.html" class="AccountNavigation">Home</a> 
+            <a href="#" class="AccountNavigation">Modules</a> 
+            <a href="#" class="AccountNavigation">Piazza</a> 
+            <a href="#" class="AccountNavigation">Zoom Meetings</a> 
+            <a href="../Courses/Assignments/index.html" class="AccountNavigation">Assignments</a> 
+            <a href="#" class="AccountNavigation">Quizzes</a> 
+            <a href="../Courses/Grades/grades.html" class="AccountNavigation" >Grades</a> 
+            <a href="#" class="AccountNavigation">People</a> 
+            <a href="#" class="AccountNavigation">Panopto Video</a> 
+            <a href="#" class="AccountNavigation">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Files <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            
+            <a href="#" class="AccountNavigation">Progress Reports<br>(EAB Navigate)</a> 
+            <a href="./index.html" class="AccountNavigation selected">Settings</a>
+</div>
+
+<div class="col">
+    <div class="container mt-3">
+        <div class="col">
+            <form>
+                <div class="form-group row">
+                    <label for="imageUpload" class="col-sm-2 col-form-label">Image:</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control-file" id="imageUpload">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Name:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">CS610 Web Dev</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Blueprint Course:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">No</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">SIS ID:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">CS610.34.323</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Subaccount:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">CS Graduate</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Term:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">202310_Fall 2023 Semester Full</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Term:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">202310_Fall 2023 Semester Full</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Time Zone:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
+                            <option value="UTC">UTC</option>
+                            <option value="EST">Eastern Standard Time (EST)</option>
+                            <option value="CST">Central Standard Time (CST)</option>
+                            <option value="MST">Mountain Standard Time (MST)</option>
+                            <option value="PST">Pacific Standard Time (PST)</option>
+                         
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Term:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
+                            <option value="" disabled selected>Term</option>
+                      
+                            <option value="202310_Fall">202310_Fall 2023 Semester Full</option>
+                        
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Start Date:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" value="2023-01-01">
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">End Date:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" value="2023-12-31">
+                    </div>
+                </div>
+                
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Language:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">English</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">File Storage:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">10000 megabytes</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Large Course:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">No</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Grading Scheme:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">Enabled</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">License:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">Private (Copyrighted)</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Visibility:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">Course</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Format:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">On-Campus</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Mastery Paths:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">Enabled</p>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Description:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-plaintext">This is a course description.</p>
+                    </div>
+                </div>
+                
+        
+                
+
+     
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <input type="checkbox" id="checkbox1">
+                    </div>
+                    <label for="checkbox1" class="col-sm-10 col-form-label">Restrict students from viewing course before term start date</label>
+                </div>
+
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">Description:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="description" rows="5"></textarea>
+                        <a href="#" class="mt-2 d-block">more options</a>
+                    </div>
+                </div>
+
+      
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Update Course Details</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+        <!-- <td>
+            <table>
+              
+                <tr>
+                    <td>Image:</td>
+                    <td><input type="file"></td>
+                </tr>
+
+                <tr>
+                    <td>Name:</td>
+                    <td>CS610 Web Dev</td>
+                </tr>
+
+                <tr>
+                    <td>Blueprint Course:</td>
+                    <td>No</td>
+                </tr>
+                
+                <tr>
+                    <td>SIS ID:</td>
+                    <td>CS610.34.323</td>
+                </tr>
+
+                <tr>
+                    <td>Subaccount</td>
+                    <td>CS Graduate</td>
+                </tr>
+
+                <tr>
+                    <td>Term</td>
+                    <td>202310_Fall 2023 Semester Full</td>
+                </tr>
+
+                <tr>
+                    <td>Time Zone:</td>
+                    <td>
+                        <select>
+                            <option>UTC</option>
+                            <option>EST</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+              
+                <tr>
+                    <td>Participation:</td>
+                    <td>
+                        <select>
+                            <option selected>Term</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Start:</td>
+                    <td><input type="date"></td>
+                </tr>
+
+
+                <tr>
+                    <td>End:</td>
+                    <td><input type="date"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="checkbox" id="checkbox1"></td>
+                    <td><label for="checkbox1">Restrict students from viewing course before term start date</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox2"></td>
+                    <td><label for="checkbox2">Restrict students from viewing course after term end date</label></td>
+                </tr>
+
+
+                <tr>
+                    <td>Default due time:</td>
+                    <td>
+                        <select>
+                            <option>Account default (11:59pm)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">This influences the user interface for setting due dates. It does not change the time due for any existing assignments.</td>
+                </tr>
+
+
+                <tr>
+                    <td>Language:</td>
+                    <td>
+                        <select>
+                            <option>Not set (user-configurable, defaults to English)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">This will override any user/system language preference. This is only recommended for foreign language courses.</td>
+                </tr>
+
+
+                <tr>
+                    <td>File Storage:</td>
+                    <td>10000 megabytes</td>
+                </tr>
+
+
+                <tr>
+                    <td>Large Course:</td>
+                    <td>
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Launch SpeedGrader Filtered by Student Group</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grading Scheme:</td>
+                    <td>
+                        <input type="checkbox" id="checkbox4">
+                        <label for="checkbox4">Enable course grading scheme</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>License:</td>
+                    <td>
+                        <select>
+                            <option>Private (Copyrighted)</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>File Copyright:</td>
+                    <td>
+                        <input type="checkbox" id="checkbox5">
+                        <label for="checkbox5">Copyright and license information must be provided for files before they are published.</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Visibility:</td>
+                    <td>If you need to make your course public please contact your administrator/support</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <select>
+                            <option>Course</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="checkboxVisibility">
+                        <label for="checkboxVisibility">Include this course in the public course index</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Format:</td>
+                    <td>
+                        <select>
+                            <option>On-Campus</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Mastery Paths:</td>
+                    <td>
+                        <input type="checkbox" id="checkboxMastery">
+                        <label for="checkboxMastery">Enable individual learning paths for students based on assessment</label>
+                    </td>
+                </tr>
+
+ 
+                <tr>
+                    <td>Description:</td>
+                    <td>
+                        <textarea cols="30" rows="5"></textarea>
+                        <br>
+                        <a href="#">more options</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button>Update Course Details</button></td>
+                </tr>
+            </table>
+        </td>
+
+    </table>
+</td>
+
+            </table>
+        </td>
+    </tr>
+</table> -->

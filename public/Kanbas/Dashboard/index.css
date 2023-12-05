@@ -1,0 +1,161 @@
+
+.sidebar-link {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;  
+    line-height: 1.5;  
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    align-items: center; 
+    justify-content: center; /
+}
+
+.sidebar-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;  
+    text-align: center;  
+}
+
+
+.icon-link .fa {
+    align-self: center;
+    margin-bottom: 10px; 
+    margin-top: 5px
+}
+
+.selected-link .sidebar-link {
+    color: red;
+    background-color: white;
+    width: 100%;  
+    display: block; 
+}
+
+.selected-link .fa {
+    color: grey;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+.icon-link .fa.fa-user-circle {
+    font-size: 30px;
+    color: gray;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fas.fa-chart-pie {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.icon-link .fa.fa-book {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-calendar {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-inbox {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-clock {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-play {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-arrow-circle-right {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-question-circle {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.icon-link .fas.fa-pencil-alt {
+    color: red;
+    display: block;
+}
+
+
+
+.fixed-sidebar {
+    width: 85px;
+    flex: none;
+    background-color: black;
+    height: 100vh;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 991.98px) {
+    .d-flex > div {
+        flex: 1 0 calc(33.333% - 24px); 
+        max-width: calc(33.333% - 24px);
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .d-flex > div {
+        flex: 1 0 calc(50% - 24px); 
+        max-width: calc(50% - 24px);
+    }
+}

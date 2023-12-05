@@ -1,0 +1,20 @@
+.page-header {
+    padding-bottom: 10px; /* Space below the title */
+    margin-bottom: 20px; /* Space below the grey line */
+    border-bottom: 1px solid #ddd; /* Grey line */
+  }
+  
+  .d-flex flex-row flex-wrap {
+    background-color: teal !important;
+  }
+  .main-container {
+    display: flex;
+}
+
+.content-area {
+    /* Style for main content area */
+}
+
+.sidebar {
+    margin-top: 100px;
+}

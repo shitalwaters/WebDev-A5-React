@@ -1,0 +1,31 @@
+.courseNav-group-item.active::before {
+    content: ''; /* This is necessary to create a pseudo-element */
+    background-color: black; /* The color of the vertical line */
+    width: 2px; /* The width of the vertical line */
+    height: 100%; /* The height to match the link item */
+    position: absolute; /* Position the pseudo-element absolutely within the link item */
+    left: 0; /* Position the line to the left of the link item */
+    top: 0; /* Align the top of the line with the top of the link item */
+}
+
+.courseNav-group-item {
+    display: flex;
+    align-items: end;
+    color: rgb(233, 34, 34); /* Text color for each link */
+    padding: 10px; /* Space inside each link */
+    margin-bottom: 5px; /* Space between links */
+    text-align: center; /* Center text within each link */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid white; /* Optional: adds a border to each link */
+    width: 100%; /* Make each link fill its container */
+    position: relative; /* Needed for absolute positioning of children */
+    padding-left: 10px; 
+}
+
+
+
+.courseNav-group-item.active {
+    background-color: transparent; /* Background color for active link */
+    color: black; /* Text color for active link */
+}
+

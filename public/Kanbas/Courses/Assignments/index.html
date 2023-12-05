@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link href="index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<body>    
+    <div class="container-fluid">
+      <div class="row">
+
+            <div class="fixed-sidebar">
+              <div class="icon-link"> 
+                  <a href="../../Account/index.html" class="sidebar-link" id="account-link">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                      Account
+                  </a>
+              </div>
+            
+
+            <div class="icon-link">
+                <a href="../../Dashboard/index.html" class="sidebar-link" id="dashboard-link">
+                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+            </div>
+            
+        
+            <div class="icon-link selected-link">
+                <a href="./index.html" class="sidebar-link" id="courses-link">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="calendar-link">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="inbox-link">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    Inbox
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="history-link">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    History
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="studio-link">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Studio
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="commons-link">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="help-link">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help
+                </a>
+            </div>
+        </div>
+
+        <div class="wd-grid-col-third-page">
+            <a href="../../index.html" class="AccountNavigation">Home</a> 
+            <a href="#" class="AccountNavigation">Modules</a> 
+            <a href="#" class="AccountNavigation">Piazza</a> 
+            <a href="#" class="AccountNavigation">Zoom Meetings</a> 
+            <a href="./index.html" class="AccountNavigation selected">Assignments</a> 
+            <a href="#" class="AccountNavigation">Quizzes</a> 
+            <a href="../Grades/grades.html" class="AccountNavigation" >Grades</a> 
+            <a href="#" class="AccountNavigation">People</a> 
+            <a href="#" class="AccountNavigation">Panopto Video</a> 
+            <a href="#" class="AccountNavigation">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Files <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            
+            <a href="#" class="AccountNavigation">Progress Reports<br>(EAB Navigate)</a> 
+            <a href="./Settings/index.html" class="AccountNavigation">Settings</a>
+</div>
+
+
+
+
+<div class="col">
+    <div class="d-flex justify-content-end mb-3">
+        <!-- Input search box -->
+        <input type="text" class="form-control mr-2" placeholder="Search for Assignment">
+
+        <!-- Collapse All button -->
+        <!-- ... (if you have any content here) ... -->
+    
+        <!-- Publish All dropdown button with green checkmark icon -->
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-plus mr-1" aria-hidden="true"></i>
+                Group
+            </button>
+        </div>
+    
+        <!-- Module button with red background and white text -->
+        <button class="btn btn-danger mr-2">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Assignment
+        </button>
+        
+        <button class="btn btn-secondary mr-2">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </button>
+          
+
+    </div>
+    
+    <!-- Modules -->
+    <div class="list-group">
+        <!-- Module Title with checkmark -->
+        <div class="list-group-item list-group-item-secondary d-flex align-items-center">
+            <i class="fa fa-caret-down mr-2" aria-hidden="true"></i>
+            <div class="mr-auto">Assignments</div>
+    
+            <!-- Rounded corners element -->
+            <p class="wd-rounded-corners-all-around wd-border-thin wd-border-blue wd-border-solid wd-padding-fat mr-2 my-auto">
+                40% of Total
+            </p>
+    
+
+            <div class="dropdown my-auto">
+                <i class="fa fa-plus fa-xs ml-2 align-middle" aria-hidden="true"></i>
+            </div>
+            
+            <i class="fa fa-ellipsis-v ml-2 align-middle my-auto" aria-hidden="true"></i>
+        </div>
+    </div>
+    
+    
+        
+        
+        <!-- Sub-item: LEARNING OBJECTIVES with checkmark -->
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <!-- Making the title clickable -->
+                    <a href="./edit.html" style="text-decoration: none; color: black;"><strong>A1 SETUP</strong></a><br>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+        
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <a href="./edit.html" style="text-decoration: none; color: black;">
+                    <strong>A2 HTML</strong><br></a>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+        
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <a href="./edit.html" style="text-decoration: none; color: black;">
+                    <strong>A3 CSS</strong><br></a>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <a href="./edit.html" style="text-decoration: none; color: black;">
+                    <strong>A4 BOOTSTRAP</strong><br></a>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <a href="./edit.html" style="text-decoration: none; color: black;">
+                    <strong>A5 JAVASCRIPT</strong><br></a>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="list-group-item mt-1 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>
+                <div>
+                    <a href="./edit.html" style="text-decoration: none; color: black;">
+                    <strong>A6 REACT</strong><br></a>
+                    <small class="text-muted">Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2023) Module</small><br>
+                    <small class="text-muted"><strong>Due</strong> Sep 18, 2023 at 11:59pm | 100 pts</small>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fa fa-check-circle ml-2" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v ml-2" aria-hidden="true"></i>
+            </div>
+        </div>
+
+ 
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+</body>

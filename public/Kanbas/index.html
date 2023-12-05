@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link href="index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<body>    
+    <div class="container-fluid">
+      <div class="row">
+
+            <div class="fixed-sidebar">
+              <div class="icon-link"> 
+                  <a href="./Account/index.html" class="sidebar-link" id="account-link">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                      Account
+                  </a>
+              </div>
+            
+
+            <div class="icon-link">
+                <a href="./Dashboard/index.html" class="sidebar-link" id="dashboard-link">
+                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+            </div>
+            
+        
+            <div class="icon-link selected-link">
+                <a href="../Courses/index.html" class="sidebar-link" id="courses-link">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="calendar-link">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="inbox-link">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    Inbox
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="history-link">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    History
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="studio-link">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Studio
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="commons-link">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="help-link">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help
+                </a>
+            </div>
+        </div>
+
+        <div class="wd-grid-col-third-page">
+            <a href="./index.html" class="AccountNavigation selected">Home</a> 
+            <a href="#" class="AccountNavigation">Modules</a> 
+            <a href="#" class="AccountNavigation">Piazza</a> 
+            <a href="#" class="AccountNavigation">Zoom Meetings</a> 
+            <a href="./Courses/Assignments/index.html" class="AccountNavigation">Assignments</a> 
+            <a href="#" class="AccountNavigation">Quizzes</a> 
+            <a href="./Courses/Grades/grades.html" class="AccountNavigation" >Grades</a> 
+            <a href="#" class="AccountNavigation">People</a> 
+            <a href="#" class="AccountNavigation">Panopto Video</a> 
+            <a href="#" class="AccountNavigation">Discussions</a> 
+            <a href="#" class="AccountNavigation">Announcements</a> 
+            <a href="#" class="AccountNavigation">Pages</a> 
+            <a href="#" class="AccountNavigation">Files</a> 
+            <a href="#" class="AccountNavigation">Rubrics</a> 
+            <a href="#" class="AccountNavigation">Outcomes</a> 
+            <a href="#" class="AccountNavigation">Collaborations</a> 
+            <a href="#" class="AccountNavigation">Syllabus</a> 
+            <a href="./Settings/index.html" class="AccountNavigation">Settings</a>
+</div>
+
+
+
+
+<div class="col">
+    <div class="d-flex justify-content-end mb-3">
+    
+        <button class="btn btn-secondary mr-2">Collapse All</button>
+        <button class="btn btn-secondary mr-2">View Progress</button>
+    
+  
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-check-circle text-success mr-1" aria-hidden="true"></i>
+                Publish All
+            </button>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="#">Option 1</a>
+                <a class="dropdown-item" href="#">Option 2</a>
+            </div>
+        </div>
+    
+        <!-- Module button with red background and white text -->
+        <button class="btn btn-danger">Module</button>
+    </div>
+    
+<!-- Modules -->
+<div class="list-group">
+    <!-- Module Title with checkmark -->
+    <div class="list-group-item list-group-item-secondary d-flex align-items-center">
+        <div class="mr-auto">Week 0 - INTRO</div>
+    
+        <!-- Dropdown menu with checkmark and red x -->
+        <div class="dropdown">
+            <i class="fa fa-check-circle dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><i class="fa fa-times text-danger" aria-hidden="true"></i> Remove</a>
+            </div>
+        </div>
+    
+        <!-- Plus icon -->
+        <i class="fa fa-plus fa-xs ml-2 align-middle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <!-- Sub-item: LEARNING OBJECTIVES with checkmark -->
+    <div class="list-group-item mt-1 d-flex align-items-center">
+        <div class="mr-auto">LEARNING OBJECTIVES</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <!-- Indented Sub-sub-items with checkmarks -->
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Introduction to the course</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Learn what is Web Development</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Creating a development environment</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Creating a Web Application</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Getting started with the 1st assignment</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 d-flex align-items-center">
+        <div class="mr-auto">READING</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Full Stack Developer - Chapter 1 - Introduction</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <!-- SLIDES -->
+    <div class="list-group-item mt-1 d-flex align-items-center">
+        <div class="mr-auto">SLIDES</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto"><a href="#">Introduction to Web Development Links to an external site.</a></div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto"><a href="#">Creating an HTTP server with Node .js Links to an external site.</a></div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto"><a href="#">Creating a React Application Links to an external site.</a></div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    
+    <!-- Week 1 - HTML -->
+    <div class="list-group-item list-group-item-secondary d-flex align-items-center">
+        <div class="mr-auto">Week 1 - HTML</div>
+    </div>
+    
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">LEARNING OBJECTIVES</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Understanding HTML Structure</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Working with HTML Tags</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Styling with CSS</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Responsive Web Design</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+
+    <div class="list-group-item mt-1 pl-5 d-flex align-items-center">
+        <div class="mr-auto">Introduction to JavaScript</div>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        
+        <i class="fa fa-ellipsis-v ml-2 align-middle" aria-hidden="true"></i>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+</body>
+
+
+

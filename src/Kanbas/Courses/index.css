@@ -1,0 +1,18 @@
+.course-container {
+    /* Adjust padding and margin as necessary, just ensure it doesn't affect the full width */
+  }
+  
+  .breadcrumb-container {
+    width: 100%; /* This ensures the container spans the full width */
+    margin-left: calc(-1 * var(--side-padding)); /* Counteract the parent's padding if any */
+    margin-right: calc(-1 * var(--side-padding)); /* Use the actual padding value of your parent container */
+  }
+  
+  .breadcrumb-line {
+    height: 4px;
+    background-color: #d3d3d3; /* Your breadcrumb color */
+    /* If your title has margins that should not affect the breadcrumb, reset them here */
+  }
+  
+  /* Add any additional styles for your container or other elements */
+  

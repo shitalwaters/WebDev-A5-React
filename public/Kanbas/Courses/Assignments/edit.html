@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link href="index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<body>    
+    <div class="container-fluid">
+      <div class="row">
+
+            <div class="fixed-sidebar">
+              <div class="icon-link"> 
+                  <a href="../../Account/index.html" class="sidebar-link" id="account-link">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                      Account
+                  </a>
+              </div>
+            
+
+            <div class="icon-link">
+                <a href="../../Dashboard/index.html" class="sidebar-link" id="dashboard-link">
+                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+            </div>
+            
+        
+            <div class="icon-link selected-link">
+                <a href="../index.html" class="sidebar-link" id="courses-link">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="calendar-link">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="inbox-link">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    Inbox
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="history-link">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    History
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="studio-link">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Studio
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="commons-link">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="help-link">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help
+                </a>
+            </div>
+        </div>
+
+        <div class="wd-grid-col-third-page">
+            <a href="../../index.html" class="AccountNavigation">Home</a> 
+            <a href="#" class="AccountNavigation">Modules</a> 
+            <a href="#" class="AccountNavigation">Piazza</a> 
+            <a href="#" class="AccountNavigation">Zoom Meetings</a> 
+            <a href="../../Courses/Assignments/index.html" class="AccountNavigation selected">Assignments</a> 
+            <a href="#" class="AccountNavigation">Quizzes</a> 
+            <a href="../Grades/grades.html" class="AccountNavigation" >Grades</a> 
+            <a href="#" class="AccountNavigation">People</a> 
+            <a href="#" class="AccountNavigation">Panopto Video</a> 
+            <a href="#" class="AccountNavigation">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Files <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            
+            <a href="#" class="AccountNavigation">Progress Reports<br>(EAB Navigate)</a> 
+            <a href="../../Settings/index.html" class="AccountNavigation">Settings</a>
+</div>
+
+
+
+<div class="col">
+    <div class="d-flex justify-content-end align-items-center mb-3">
+        <span class="mr-2" style="color: green;">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Published
+        </span>
+        <button class="btn btn-secondary mr-2">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="container mt-3">
+        <div class="form-group">
+            <label class="font-weight-bold">Assignment Name</label>
+            <input type="text" class="form-control" value="A1 - ENV + HTML">
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Description</label>
+            <textarea class="form-control" rows="2">This is the assignment description.</textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Points</label>
+            <input type="text" class="form-control" value="100">
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Group</label>
+            <select class="form-control" id="select-group">
+                <option selected value="Assignments">Assignments</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Grade as</label>
+            <select class="form-control" id="select-grade">
+                <option selected value="percentage">Percentage</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Submission Type</label>
+            <select class="form-control" id="select-submission">
+                <option selected value="Online">Online</option>
+            </select>
+        </div>
+
+        <label class="font-weight-bold">Online Entry Options</label>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Text Entry" id="chkbox-TextEntry" name="check-onlineOptions">
+            <label class="form-check-label" for="chkbox-TextEntry">Text Entry</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Website URL" id="chkbox-WebsiteURL" name="check-onlineOptions">
+            <label class="form-check-label" for="chkbox-WebsiteURL">Website URL</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Media Recordings" id="chkbox-MediaRecordings" name="check-onlineOptions">
+            <label class="form-check-label" for="chkbox-MediaRecordings">Media Recordings</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Student Annotations" id="chkbox-StudentAnnotations" name="check-onlineOptions">
+            <label class="form-check-label" for="chkbox-StudentAnnotations">Student Annotations</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="File Uploads" id="chkbox-FileUploads" name="check-onlineOptions">
+            <label class="form-check-label" for="chkbox-FileUploads">File Uploads</label>
+        </div>
+        
+
+        <div class="form-group">
+            <label class="font-weight-bold">Submission Attempts</label>
+            <select class="form-control" id="select-attempts">
+                <option selected value="unlimited">Unlimited</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Group Assignment</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="chkbox-GroupAssignment">
+                <label class="form-check-label" for="chkbox-GroupAssignment">This is a group assignment</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Assign to</label>
+            <input type="text" class="form-control" value="Everyone">
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Due</label>
+            <input type="date" class="form-control" value="2021-01-01">
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Available from</label>
+            <input type="date" class="form-control" value="2021-01-01">
+        </div>
+
+        <div class="form-group">
+            <label class="font-weight-bold">Until</label>
+            <input type="date" class="form-control" value="2021-01-01">
+        </div>
+
+        <div class="form-group mt-4">
+            <button class="btn btn-light btn-block mb-3">+Add</button>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="notifyUsers">
+                <label class="custom-control-label" for="notifyUsers">Notify users that this content changed</label>
+            </div>
+            <div>
+                <a href="./index.html" class="btn btn-secondary mr-2">Cancel</a>
+                <a href="./index.html" class="btn btn-danger">Save</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

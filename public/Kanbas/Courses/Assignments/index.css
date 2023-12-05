@@ -1,0 +1,288 @@
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.fixed-sidebar {
+    width: 85px; 
+    flex: none; 
+    background-color: black; 
+    height: 100vh; 
+}
+
+
+
+.wd-bg-color-black {
+    background-color: black;
+ }
+
+ 
+ .custom-btn {
+    background-color: #d1c7c781; 
+    color: #000; 
+    border: none;
+    padding: 5px 10px; 
+    font-size: 14px; 
+    display: inline-flex; 
+    align-items: center;
+}
+
+.custom-btn .fas {
+    margin-right: 5px; 
+}
+
+a.btn.custom-btn-text {
+    color: white;
+}
+
+.custom-btn-text {
+    color: white !important;
+}
+
+
+
+
+.wd-grid-col-left-sidebar {
+   width: 15%;
+   float: left;
+} */
+
+
+ .wd-grid-col-tophalf-page-left a,
+ .wd-grid-col-tophalf-page-left a:hover,
+ .wd-grid-col-tophalf-page-left a:visited {
+     color: red;
+ }
+ 
+
+
+.sidebar-link {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;  
+    line-height: 1.5;  
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    align-items: center; 
+    justify-content: center; /
+}
+
+.sidebar-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;  
+    text-align: center;  
+}
+
+
+.icon-link .fa {
+    align-self: center;
+    margin-bottom: 10px; 
+    margin-top: 5px
+}
+
+.selected-link .sidebar-link {
+    color: red;
+    background-color: white;
+    width: 100%;  
+    display: block; 
+}
+
+.selected-link .fa {
+    color: grey;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+.icon-link .fa.fa-user-circle {
+    font-size: 30px;
+    color: gray;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fas.fa-chart-pie {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.icon-link .fa.fa-book {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-calendar {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-inbox {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-clock {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-play {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-arrow-circle-right {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-link .fa.fa-question-circle {
+    font-size: 24px;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.icon-link .fas.fa-pencil-alt {
+    color: red;
+    display: block;
+}
+
+
+
+
+.wd-grid-col-tophalf-page-left .icon-link {
+    display: block; 
+    text-align: left; 
+    width: auto; 
+    margin: 0; 
+}
+
+.icon-link .fa.fa-user {
+    font-size: 100px;
+    color: grey;
+    display: block;
+    text-align: left; 
+    margin-bottom: 10px;
+}
+h2, h3, p, a {
+    text-align: left; 
+    margin-bottom: 10px; 
+}
+
+
+
+
+
+
+.wd-grid-col-third-page {
+    width: 195px; 
+    margin-left: 25px; 
+    box-sizing: border-box; 
+}
+
+.AccountNavigation {
+    display: block;  
+    margin-bottom: 17px;  
+    text-decoration: none;
+    text-align: left; 
+    word-wrap: break-word; 
+    color: red;  
+    margin-bottom: 18px; 
+}
+
+.AccountNavigation.selected {
+    color: black;
+    border-left: 2px solid black; 
+    padding-left: 9px; 
+    text-decoration: none;
+}
+
+.AccountNavigation:hover {
+    color: red;
+}
+
+
+
+.fa-check-circle {
+    color: green;
+}
+
+.list-group-item a {
+    color: red;
+}
+.AccountNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px; 
+}
+
+.AccountNavigation i {
+    color: black;
+    font-size: 0.8em; 
+}
+.list-group {
+    border-left: 5px solid green; 
+}
+
+
+.wd-rounded-corners-all-around {
+    border-radius: 8px; 
+}
+
+.wd-border-thin {
+    border-width: 1px;
+}
+
+.wd-border-blue {
+    border-color: black;
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-padding-fat {
+    padding: 5px 10px; 
+}

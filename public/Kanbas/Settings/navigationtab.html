@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link href="index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<body>    
+    <div class="container-fluid">
+      <div class="row">
+
+            <div class="fixed-sidebar">
+              <div class="icon-link"> 
+                  <a href="../Account/index.html" class="sidebar-link" id="account-link">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                      Account
+                  </a>
+              </div>
+            
+
+            <div class="icon-link">
+                <a href="../Dashboard/index.html" class="sidebar-link" id="dashboard-link">
+                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+            </div>
+            
+        
+            <div class="icon-link selected-link">
+                <a href="../Courses/index.html" class="sidebar-link" id="courses-link">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="calendar-link">
+                    <i class="fa fa-calendar"></i>
+                    Calendar
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="inbox-link">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    Inbox
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="history-link">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    History
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="studio-link">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Studio
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="commons-link">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons
+                </a>
+            </div>
+        
+            <div class="icon-link">
+                <a href="#" class="sidebar-link" id="help-link">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Help
+                </a>
+            </div>
+        </div>
+
+
+        <div class="wd-grid-col-third-page">
+            <a href="../index.html" class="AccountNavigation">Home</a> 
+            <a href="#" class="AccountNavigation">Modules</a> 
+            <a href="#" class="AccountNavigation">Piazza</a> 
+            <a href="#" class="AccountNavigation">Zoom Meetings</a> 
+            <a href="../Courses/Assignments/index.html" class="AccountNavigation">Assignments</a> 
+            <a href="#" class="AccountNavigation">Quizzes</a> 
+            <a href="../Courses/Grades/grades.html" class="AccountNavigation" >Grades</a> 
+            <a href="#" class="AccountNavigation">People</a> 
+            <a href="#" class="AccountNavigation">Panopto Video</a> 
+            <a href="#" class="AccountNavigation">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Files <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <a href="#" class="AccountNavigation">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            
+            <a href="#" class="AccountNavigation">Progress Reports<br>(EAB Navigate)</a> 
+            <a href="./index.html" class="AccountNavigation selected">Settings</a>
+</div>
+
+
+<div class="col">
+    <div class="container mt-3">
+<h5>Drag and drop items to reorder them in the course navigation.</h5>
+<table class="table table-bordered">
+<tbody>
+    <tr><td>Home</td></tr>
+    <tr><td>Modules</td></tr>
+    <tr><td>Piazza</td></tr>
+    <tr><td>Zoom</td></tr>
+    <tr><td>Meetings</td></tr>
+    <tr><td>Assignments</td></tr>
+    <tr><td>Quizzes</td></tr>
+    <tr><td>Grades</td></tr>
+    <tr><td>People</td></tr>
+    <tr><td>Panopto Video</td></tr>
+</tbody>
+</table>
+
+<h5 class="mt-4">Drag items here to hide them from students.</h5>
+<p>Disabling most pages will cause students who visit those pages to be redirected to the course home page.</p>
+<table class="table table-bordered">
+<tbody>
+
+    <tr><td>SCORM<br><small>Page disabled, won't appear in navigation</small></td></tr>
+
+</tbody>
+</table>
+
+<div class="mt-4">
+<button type="button" class="btn btn-primary" onclick="alert('Saved!')">Save</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <table border="1" width="100%">
+    <tr>
+     
+        <td>
+            <ul>
+                <li><a href="../Account/index.html">Account</a> </li>
+                <li><a href="#">Dashboard</a> </li>
+                <li><a href="../Courses/index.html">Courses</a> </li>
+                <li><a href="#">Calendar</a> </li>
+                <li><a href="#">Inbox</a> </li>
+                <li><a href="#">History</a> </li>
+                <li><a href="#">Studio</a> </li>
+                <li><a href="#">Commons</a> </li>
+                <li><a href="#">Help</a> </li>
+            </ul>
+        </td>
+
+        <td>
+            <ul>
+                <li><a href="../index.html">Home</a> </li>
+                <li><a href="#">Modules</a> </li>
+                <li><a href="#">Piazza</a> </li>
+                <li><a href="#">Zoom Meetings</a> </li>
+                <li><a href="../Courses/Assignments/index.html">Assignments</a> </li>
+                <li><a href="#">Quizzes</a> </li>
+                <li><a href="../Courses/Grades/grades.html">Grades</a> </li>
+                <li><a href="#">People</a> </li>
+                <li><a href="#">Panopto Video</a> </li>
+                <li><a href="#">Discussions</a> </li>
+                <li><a href="#">Announcements</a> </li>
+                <li><a href="#">Pages</a> </li>
+                <li><a href="#">Files</a> </li>
+                <li><a href="#">Rubrics</a> </li>
+                <li><a href="#">Outcomes</a> </li>
+                <li><a href="#">Collaborations</a> </li>
+                <li><a href="#">Syllabus</a> </li>
+                <li><a href="../Settings/index.html">Settings</a></li>
+                
+            </ul>
+        </td>
+        <td>                
+            <h5>Drag and drop items to reorder them in the course navigation.</h5>
+            <table border="1">
+                <tr><td>Home</td></tr>
+                <tr><td>Modules</td></tr>
+                <tr><td>Piazza</td></tr>
+                <tr><td>Zoom</td></tr>
+                <tr><td>Meetings</td></tr>
+                <tr><td>Assignments</td></tr>
+                <tr><td>Quizzes</td></tr>
+                <tr><td>Grades</td></tr>
+                <tr><td>People</td></tr>
+                <tr><td>Panopto Video</td></tr>
+            </table> 
+
+            <h5>Drag items here to hide them from students.</h5>
+            <p>Disabling most pages will cause students who visit those pages to be redirected to the course home page.</p>
+            <table border="1">
+                <tr><td>SCORM<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Attendance<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Barnes and Noble Bookstore<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Digication<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Top Hat<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Syllabus<br><small>Page disabled, will redirect to course home page</small></td></tr>
+                <tr><td>Perusall<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Microsoft Teams Meetings<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>FACT Reporting and Photo Roster<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Progress Reports (Navigate)<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Microsoft Teams for Canvas<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>VHL Central<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Gradescope 1.3<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>Credentials<br><small>Page disabled, won't appear in navigation</small></td></tr>
+                <tr><td>iClicker<br><small>Page disabled, won't appear in navigation</small></td></tr>
+            </table>
+            <br>
+            <br>
+            <button type="button" onclick="alert('Saved!')">Save</button>
+            
+        </td>
+        
+
+
+
+            </td>
+        </tr>
+    </table>     -->

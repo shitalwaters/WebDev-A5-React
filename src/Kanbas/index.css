@@ -1,0 +1,5 @@
+.page-title {
+    border-bottom: 2px solid grey; /* Grey line */
+    padding-bottom: 10px; /* Space between title and line */
+    margin-bottom: 20px; /* Space below the line */
+}
