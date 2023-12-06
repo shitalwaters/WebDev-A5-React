@@ -1,6 +1,5 @@
 import ModuleList from "./ModuleList";
 
-
 function Modules() {
     return (
         <div>

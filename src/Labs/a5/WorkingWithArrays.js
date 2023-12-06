@@ -127,12 +127,12 @@ function WorkingWithArrays() {
                     />
                     Completed
                 </label>
-                <button onClick={postTodo} >
+                <button onClick={postTodo} 
+                className="btn btn-warning me-2">
+                    
                     Post Todo
                 </button>
-                <button onClick={updateTodo}>
-                    Update Todo
-                </button>
+        
             </div>
             <br />
 
@@ -166,7 +166,7 @@ function WorkingWithArrays() {
                         <button
                             onClick={() => removeTodo(todo)}
                             className="btn btn-danger float-end" >
-                            Remove (GET)
+                            Remove
                         </button>
                         <button
                             onClick={() => deleteTodo(todo)}

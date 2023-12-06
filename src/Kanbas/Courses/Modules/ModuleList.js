@@ -107,7 +107,7 @@ function ModuleList() {
           }
         </div>
         {showAddModule && <div className="wd-add-module">
-          {/***  Add Module Form ****/}
+     
           Module Name
           <input
             value={module.name} placeholder="Module Name"
