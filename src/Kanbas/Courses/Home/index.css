@@ -1,28 +1,32 @@
 .home-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
+    padding-right: 20%; 
 }
 
+
 .module-group {
-    flex: 1; /* Allows module list to grow and take available space */
-    margin-right: 50px; /* Space between the module list and sidebar */
+    flex: 1; 
+    margin-right: 50px; 
 }
 
 .sidebar {
-    width: 20%; /* Or a fixed width like 300px */
-    margin-left: auto;
-    margin-right: auto;
+    width: 20%; 
+    position: fixed;
+    top: 0; 
+    right: 0; 
     display: flex;
     flex-direction: column;
- 
+    z-index: 1000; 
 }
 
+
 .sidebar-item {
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5; 
     padding: 10px 15px;
-    margin-bottom: 10px; /* Spacing between items */
-    border-radius: 4px; /* Rounded corners */
-    border: 1px solid #ddd; /* Light grey border for each item */
-    border-radius: 4px; /* Rounded corners for each item */
+    margin-bottom: 10px; 
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
 }

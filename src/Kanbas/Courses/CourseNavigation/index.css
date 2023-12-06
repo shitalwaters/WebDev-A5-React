@@ -17,7 +17,7 @@
     text-align: center; /* Center text within each link */
     text-decoration: none; /* Remove underline from links */
     border: 1px solid white; /* Optional: adds a border to each link */
-    width: 100%; /* Make each link fill its container */
+    width: 0%; /* Make each link fill its container */
     position: relative; /* Needed for absolute positioning of children */
     padding-left: 10px; 
 }

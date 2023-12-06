@@ -1,33 +1,58 @@
-.module-group {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+/* ModuleList.css */
+
+.module-container {
+    padding: center;
+    padding-left: 300px;
 
 }
 
-.module-group-item {
+.wd-main-content {
+    margin: 10px 0;
+}
+
+.wd-button-bar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px; 
-    margin-top: 50px; 
-    background-color: #f5f5f5; /* White background for each item */
-    border: 1px solid #ddd; /* Light grey border for each item */
-    border-radius: 4px; /* Rounded corners for each item */
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.module-group-item h3, .module-group-item p {
-    color: black; 
-    margin: 0; 
-}
-
-/* Add horizontal margin to each icon */
-.module-group-item .fa-icon {
-    margin: 0 10px; 
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 
-.fa-icon {
-    color: inherit; /* This makes the icon inherit the color from the parent */
-    font-size: 1.3em; 
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.wd-module-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.wd-add-module {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.wd-icon-green {
+    color: #28a745;
 }
