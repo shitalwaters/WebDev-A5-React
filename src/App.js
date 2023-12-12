@@ -5,7 +5,7 @@ import {HashRouter} from "react-router-dom";
 import {Routes, Route, Navigate} from "react-router";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-
+import Project from "./project";
 
 function App() {
   
@@ -17,6 +17,7 @@ function App() {
         <Route path="/hello" element={<HelloWorld/>}/>
         <Route path="/Labs/*" element={<Labs/>}/>
         <Route path="/Kanbas/*" element={<Kanbas/>}/>
+        <Route path="/project/*" element={<Project/>}/>
       </Routes>
 
     </div>
