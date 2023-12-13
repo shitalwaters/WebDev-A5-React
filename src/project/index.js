@@ -8,6 +8,10 @@ import Details from "./details";
 import { useState } from "react";
 import Signin from "./users/signin";
 import UserList from "./users/list";
+import Account from "./users/account";
+import UserTable from "./users/table";
+
+
 
 function Project() {
     const [key, setKey] = useState("home");
@@ -27,7 +31,8 @@ function Project() {
                         <Link to="/project/details" className="list-group-item">Details</Link>
                         <Link to="/project/signin" className="list-group-item">Signin</Link>
                         <Link to="/project/users" className="list-group-item">Users</Link>
-
+                        <Link to="/project/account" className="list-group-item">Account</Link>
+                        
                     </div>
                 </div>
                 <div className="col-10">
@@ -40,7 +45,8 @@ function Project() {
                         <Route path="/details" element={<Details />} />
                         <Route path="/signin" element={<Signin />} />
                         <Route path="/users" element={<UserList />} />
-
+                        <Route path="/account" element={<Account />} />
+                        <Route path="/admin/users" element={<UserTable />} />
                     </Routes>
                 </div>
             </div>
