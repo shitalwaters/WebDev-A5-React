@@ -7,7 +7,7 @@ import Search from "./search";
 import Details from "./details";
 import { useState } from "react";
 import Signin from "./users/signin";
-
+import UserList from "./users/list";
 
 function Project() {
     const [key, setKey] = useState("home");
@@ -26,7 +26,7 @@ function Project() {
                         <Link to="/project/search" className="list-group-item">Search</Link>
                         <Link to="/project/details" className="list-group-item">Details</Link>
                         <Link to="/project/signin" className="list-group-item">Signin</Link>
-
+                        <Link to="/project/users" className="list-group-item">Users</Link>
 
                     </div>
                 </div>
@@ -38,7 +38,8 @@ function Project() {
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/search" element={<Search />} />
                         <Route path="/details" element={<Details />} />
-                        <Route path="/project/signin" element={<Signin />} />
+                        <Route path="/signin" element={<Signin />} />
+                        <Route path="/users" element={<UserList />} />
 
                     </Routes>
                 </div>
